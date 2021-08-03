@@ -12,7 +12,49 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
 
+<body class="page-body">
+  <header class="page-header">
+    <div class="page-header__wrapper wrapper">
+      <label for="search">
+        <input id="search" type="search" name="search" placeholder="Type here to search" title="Кто ищет, тот найдёт">
+      </label>
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="#">
+          <svg class="main-nav__logo-desk" width="66" height="66">
+            <use xlink:href="img/sprite.svg#logo"/>
+          </svg>
+          <svg class="main-nav__logo-mobile" width="52" height="52">
+            <use xlink:href="img/sprite.svg#logo-mobile"/>
+          </svg>
+        </a>
+        <div class="main-nav__user-items">
+          <a href="#">Login</a>
+          <a href="#">Cart 0</a>
+        </div>
+
+        <ul class="main-nav__items">
+          <li>
+            <a href="#">What’s new</a>
+          </li>
+          <li>
+            <a href="#">Chokers</a>
+          </li>
+          <li>
+            <a href="#">Necklaces</a>
+          </li>
+          <li>
+            <a href="#">Rings</a>
+          </li>
+          <li>
+            <a href="#">Earrings</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </header>
 </body>
+
 </html>

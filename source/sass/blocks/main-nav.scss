@@ -1,0 +1,36 @@
+.main-nav {
+}
+
+.main-nav__logo {
+  display: block;
+}
+
+.main-nav__logo-desk {
+}
+
+.main-nav__logo-mobile {
+  display: none;
+}
+
+.main-nav__user-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav__user-items a {
+  font-family: $main-text-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $main-text-color;
+}
+
+.main-nav__items a {
+  font-family: $main-text-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $main-text-color;
+}
