@@ -1,0 +1,34 @@
+.page-header {
+  position: relative;
+  min-height: 175px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f6f5f4;
+
+    @media (max-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
+}
+
+.page-header__wrapper {
+  position: relative;
+  display: flex;
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
+    width: 1004px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 100%;
+  }
+}
