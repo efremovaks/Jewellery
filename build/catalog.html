@@ -16,47 +16,89 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <p class="page-header__search">
-        <input id="search" type="search" name="search" placeholder="Type here to search" title="Кто ищет, тот найдёт">
-        <label for="search"></label>
-      </p>
-      <a class="main-nav__logo" href="index.html">
-        <svg class="main-nav__logo-desk" width="66" height="66">
-          <use xlink:href="img/sprite.svg#logo"></use>
-        </svg>
-        <svg class="main-nav__logo-mobile" width="52" height="52">
-          <use xlink:href="img/sprite.svg#logo-mobile"></use>
-        </svg>
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li>
-            <a href="#">What’s new</a>
-          </li>
-          <li>
-            <a href="#">Chokers</a>
-          </li>
-          <li>
-            <a href="#">Necklaces</a>
-          </li>
-          <li>
-            <a href="#">Rings</a>
-          </li>
-          <li>
-            <a href="#">Earrings</a>
-          </li>
-        </ul>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
 
-        <a class="main-nav__login" href="#">Login</a>
+          <button class="main-nav__menu-button" type="button" aria-label="close"></button>
+
+          <a class="main-nav__logo" href="index.html">
+            <svg width="66" height="66">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <p class="main-nav__search">
+            <svg width="14" height="14">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            <input id="search" type="search" name="search" placeholder="Type here to search" title="Кто ищет, тот найдёт">
+            <label for="search"></label>
+          </p>
+          <div class="main-nav__list">
+            <ul class="main-nav__list-items">
+              <li>
+                <a href="#">What’s new</a>
+              </li>
+              <li>
+                <a href="#">Chokers</a>
+              </li>
+              <li>
+                <a href="#">Necklaces</a>
+              </li>
+              <li>
+                <a href="#">Rings</a>
+              </li>
+              <li>
+                <a href="#">Earrings</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list-items-burger">
+              <li>
+                <a href="#">About CH</a>
+              </li>
+              <li>
+                <a href="#">Stores & Hours</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <a class="main-nav__login" href="#">Login</a>
+          </div>
+        </div>
+        <a class="main-nav__cart" href="#">
+          <svg width="20" height="18">
+            <use xlink:href="img/sprite.svg#cart"></use>
+          </svg>
+          <span>Cart 0</span>
+        </a>
       </nav>
-      <a class="main-nav__cart" href="#">Cart 0</a>
+
     </div>
 
   </header>
   <main>
-    <a href="catalog.html">CATALOG</a>
-    <a href="product.html">PRODUCT</a>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <div class="promo__catalog">
+          <h1>ALL JEWELLERY</h1>
+          <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
+        </div>
+      </div>
+    </section>
+
+
+    <p>
+      <a href="catalog.html">CATALOG</a>
+      <a href="product.html">PRODUCT</a>
+    </p>
   </main>
+  <footer>
+
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

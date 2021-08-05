@@ -1,0 +1,119 @@
+.promo {
+  background-color: #a87b62;
+}
+
+.promo__main {
+  min-height: 463px;
+  background-image: url("../img/promo-main-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-main-img@2x.jpg");
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    background-image: url("../img/promo-main-img-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-main-img-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    background-image: url("../img/promo-main-img-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-main-img-mobile@2x.jpg");
+    }
+  }
+}
+
+.promo__catalog {
+  min-height: 261px;
+  background-image: url("../img/promo-catalog-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-catalog-img@2x.jpg");
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    background-image: url("../img/promo-catalog-img-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-catalog-img-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    background-image: url("../img/promo-catalog-img-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-catalog-img-mobile@2x.jpg");
+    }
+  }
+}
+
+.promo h1 {
+  margin: 0;
+  font-family: $main-header-font;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  line-height: 130%;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.promo__main h1 {
+  font-size: 45px;
+  letter-spacing: 0.03em;
+  padding-top: 183px;
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 38px;
+    padding-top: 187px;
+  }
+}
+
+.promo__catalog h1 {
+  font-size: 34px;
+  padding-top: 93px;
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 34px;
+  }
+}
+
+.promo p {
+  margin: 0;
+  font-family: $main-header-font;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.promo__main p {
+  font-size: 38px;
+  line-height: 130%;
+  padding-bottom: 20px;
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 34px;
+  }
+}
+
+.promo__catalog p {
+  font-weight: 500;
+  font-size: 22px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}

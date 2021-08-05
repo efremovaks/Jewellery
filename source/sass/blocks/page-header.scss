@@ -2,6 +2,14 @@
   position: relative;
   min-height: 175px;
 
+  @media (max-width: $tablet-breakpoint) {
+    min-height: 126px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    min-height: 93px;
+  }
+
   &::after {
     content: "";
     position: absolute;
