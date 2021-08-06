@@ -97,6 +97,13 @@ gulp.task("js", function () {
     .pipe(server.stream());
 });
 
+gulp.task("vendor", function () {
+  return gulp.src("source/js/vendor/*.js")
+    .pipe(concat("vendor.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
+
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
@@ -111,5 +118,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "js", "images", "webp"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "js", "vendor", "images", "webp"));
 gulp.task("start", gulp.series("build", "server"));
