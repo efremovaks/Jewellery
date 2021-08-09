@@ -1,3 +1,15 @@
 .page-body {
   background-color: #ffffff;
 }
+
+.page-body h2 {
+  margin: 0;
+  font-family: $main-header-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}

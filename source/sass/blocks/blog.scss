@@ -1,0 +1,252 @@
+.blog {
+  margin-bottom: 50px;
+}
+
+.blog__wrapper {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
+    max-width: 1004px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    max-width: 100%;
+    padding: 0 45px;
+  }
+}
+
+.blog__header {
+  padding-bottom: 66px;
+}
+
+.blog__header h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.blog__header a {
+  display: block;
+  font-family: $main-text-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: $main-text-color;
+  text-decoration: underline;
+  text-decoration-color: #a87b62;
+  text-underline-position: under;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.blog__items {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-breakpoint) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.blog__itmes-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.blog__itmes-right {
+  width: 570px;
+  min-height: 630px;
+  background-color: #f0eae4;
+
+  background-image: url("../img/alve-blog-trends-desktop.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/alve-blog-trends-desktop@2x.jpg");
+    background-size: 570px;
+  }
+
+  @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
+    width: 485px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 100%;
+    padding: 0 30px;
+    min-height: 300px;
+    background-image: url("../img/alve-blog-trends-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/alve-blog-trends-tablet@2x.jpg");
+      background-size: 339px;
+    }
+  }
+}
+
+.blog__itmes-left-first,
+.blog__itmes-left-second {
+  width: 570px;
+  min-height: 300px;
+  background-color: #f0eae4;
+
+  @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
+    width: 485px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 100%;
+  }
+}
+
+.blog__itmes-left-first {
+  background-image: url("../img/jess-blog-care-desktop.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/jess-blog-care-desktop@2x.jpg");
+    background-size: 284px;
+  }
+
+  @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
+    background-position: -30px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    background-image: url("../img/jess-blog-care-tablet.jpg");
+    margin-bottom: 50px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jess-blog-care-tablet@2x.jpg");
+      background-size: 339px;
+    }
+  }
+}
+
+.blog__itmes-left-second {
+  background-image: url("../img/alex-blog-power-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/alex-blog-power-desktop@2x.jpg");
+    background-size: 284px;
+  }
+
+  @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
+    background-position: 253px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    background-image: url("../img/alex-blog-power-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/alex-blog-power-tablet@2x.jpg");
+      background-size: 339px;
+    }
+  }
+}
+
+.blog__itmes-right-content {
+  width: 285px;
+  min-height: 300px;
+  background-color: #f0eae4;
+  margin-top: 330px;
+  margin-left: 285px;
+
+  @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
+    margin-left: 200px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
+.blog__itmes-left-first .blog__itmes-content {
+  width: 300px;
+  margin-top: 66px;
+  margin-left: 275px;
+
+  @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
+    margin-left: 223px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+.blog__itmes-left-second .blog__itmes-content {
+  width: 300px;
+  margin-top: 66px;
+  margin-left: 0;
+
+  @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
+    margin-left: -22px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-left: 20px;
+  }
+}
+
+.blog__items-date {
+  margin: 0;
+  font-family: $main-text-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #9b9997;
+  padding-bottom: 12px;
+}
+
+.blog__itmes-right-content .blog__items-date {
+  padding-top: 66px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-top: 84px;
+  }
+}
+
+.blog__items-about {
+  margin: 0;
+  font-family: $main-header-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 42px;
+}
+
+.blog__items-link {
+  display: block;
+  font-family: $main-text-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: $main-text-color;
+  text-decoration: underline;
+  text-decoration-color: #a87b62;
+  text-underline-position: under;
+  width: fit-content;
+  margin: 0 auto;
+}

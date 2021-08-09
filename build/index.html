@@ -8,7 +8,6 @@
   <title>Jewellery</title>
   <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/CormorantGaramond-Regular.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="js/script.js" as="script">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -90,52 +89,182 @@
     </section>
     <section class="shop">
       <div class="shop__wrapper">
-        <h2>New In</h2>
-        <a href="#">Shop Now</a>
-
         <div class="shop__slider slider-swiper swiper-container">
+          <div class="shop__slider-header">
+            <h2>New In</h2>
+            <a href="catalog.html">Shop Now</a>
+          </div>
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
+                <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg" alt="Necklace with amethyst" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Necklace with amethyst</p>
+                <p class="shop__slider-specification-price">$ 145</p>
+              </div>
+            </div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/layered-choker-necklace-desktop@2x.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
+                <img src="img/layered-choker-necklace-desktop@2x.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Layered сhoker" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Layered сhoker</p>
+                <p class="shop__slider-specification-price">$ 115</p>
+              </div>
+            </div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/dainty-gold-necklace-desktop@2x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
+                <img src="img/dainty-gold-necklace-desktop@2x.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg" alt="Gold chain" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Gold chain</p>
+                <p class="shop__slider-specification-price">$ 215</p>
+              </div>
+            </div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/galaxy-earrings-desktop@2x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
+                <img src="img/galaxy-earrings-desktop@2x.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg" alt="Galaxy earrings" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Galaxy earrings</p>
+                <p class="shop__slider-specification-price">$ 95</p>
+              </div>
+            </div>
 
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
+                <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg" alt="Necklace with amethyst" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Necklace with amethyst</p>
+                <p class="shop__slider-specification-price">$ 145</p>
+              </div>
+            </div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/layered-choker-necklace-desktop@2x.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
+                <img src="img/layered-choker-necklace-desktop@2x.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Layered сhoker" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Layered сhoker</p>
+                <p class="shop__slider-specification-price">$ 115</p>
+              </div>
+            </div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/dainty-gold-necklace-desktop@2x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
+                <img src="img/dainty-gold-necklace-desktop@2x.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg" alt="Gold chain" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Gold chain</p>
+                <p class="shop__slider-specification-price">$ 215</p>
+              </div>
+            </div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/galaxy-earrings-desktop@2x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
+                <img src="img/galaxy-earrings-desktop@2x.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg" alt="Galaxy earrings" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Galaxy earrings</p>
+                <p class="shop__slider-specification-price">$ 95</p>
+              </div>
+            </div>
 
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
+                <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg" alt="Necklace with amethyst" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Necklace with amethyst</p>
+                <p class="shop__slider-specification-price">$ 145</p>
+              </div>
+            </div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/layered-choker-necklace-desktop@2x.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
+                <img src="img/layered-choker-necklace-desktop@2x.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Layered сhoker" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Layered сhoker</p>
+                <p class="shop__slider-specification-price">$ 115</p>
+              </div>
+            </div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/dainty-gold-necklace-desktop@2x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
+                <img src="img/dainty-gold-necklace-desktop@2x.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg" alt="Gold chain" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Gold chain</p>
+                <p class="shop__slider-specification-price">$ 215</p>
+              </div>
+            </div>
+            <div class="swiper-slide shop__slider-item">
+              <picture>
+                <source type="image/webp" srcset="img/galaxy-earrings-desktop@2x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
+                <img src="img/galaxy-earrings-desktop@2x.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg" alt="Galaxy earrings" width="270" height="284">
+              </picture>
+              <div class="shop__slider-specification">
+                <p class="shop__slider-specification-name">Galaxy earrings</p>
+                <p class="shop__slider-specification-price">$ 95</p>
+              </div>
+            </div>
           </div>
-          <!-- pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="shop__slider-pagination">
+            <!-- pagination -->
+            <div class="swiper-pagination shop__slider-pagination-item"></div>
+          </div>
+
 
           <!-- navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev shop__slider-btn-left"></div>
+          <div class="swiper-button-next shop__slider-btn-right"></div>
         </div>
-
-
       </div>
-      <div class="slider__items">
-        <ul>
-          <li></li>
-        </ul>
-
-      </div>
-
     </section>
-
-
-    <p>
-      <a href="catalog.html">CATALOG</a>
-      <a href="product.html">PRODUCT</a>
-    </p>
+    <section class="blog">
+      <div class="blog__wrapper">
+        <div class="blog__header">
+          <h2>Blog</h2>
+          <a href="#">Read All</a>
+        </div>
+        <div class="blog__items">
+          <div class="blog__itmes-left">
+            <div class="blog__itmes-left-first">
+              <div class="blog__itmes-content">
+                <p class="blog__items-date">September 30, 2019</p>
+                <p class="blog__items-about">How to care for<br> your jewellery</p>
+                <a class="blog__items-link" href="#">Read Article</a>
+              </div>
+            </div>
+            <div class="blog__itmes-left-second">
+              <div class="blog__itmes-content">
+                <p class="blog__items-date">September 23, 2019</p>
+                <p class="blog__items-about">Power of<br> crystals</p>
+                <a class="blog__items-link" href="#">Read Article</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog__itmes-right">
+            <div class="blog__itmes-right-content">
+              <p class="blog__items-date">September 16, 2019</p>
+              <p class="blog__items-about">AW 19 trends</p>
+              <a class="blog__items-link" href="#">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
   <footer class="page-footer">
