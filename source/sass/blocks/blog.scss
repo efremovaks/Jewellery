@@ -1,5 +1,13 @@
 .blog {
-  margin-bottom: 50px;
+  margin-bottom: 120px;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 69px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 61px;
+  }
 }
 
 .blog__wrapper {
@@ -20,6 +28,10 @@
 
 .blog__header {
   padding-bottom: 66px;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-bottom: 55px;
+  }
 }
 
 .blog__header h2 {
@@ -62,6 +74,10 @@
     width: 100%;
     margin-bottom: 50px;
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 40px;
+  }
 }
 
 .blog__itmes-right {
@@ -92,6 +108,19 @@
       background-size: 339px;
     }
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 100%;
+    min-height: 512px;
+    padding: 0;
+    background-image: url("../img/alve-odonnell-mobile.jpg");
+    background-position: top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/alve-odonnell-mobile@2x.jpg");
+      background-size: 344px;
+    }
+  }
 }
 
 .blog__itmes-left-first,
@@ -106,6 +135,11 @@
 
   @media (max-width: $tablet-breakpoint) {
     width: 100%;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 100%;
+    min-height: 512px;
   }
 }
 
@@ -129,6 +163,17 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/jess-blog-care-tablet@2x.jpg");
       background-size: 339px;
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    background-image: url("../img/jess-harper-mobile.jpg");
+    background-position: top;
+    margin-bottom: 40px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jess-harper-mobile@2x.jpg");
+      background-size: 344px;
     }
   }
 }
@@ -155,6 +200,16 @@
       background-size: 339px;
     }
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    background-image: url("../img/alex-holyoake-mobile.jpg");
+    background-position: top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/alex-holyoake-mobile@2x.jpg");
+      background-size: 344px;
+    }
+  }
 }
 
 .blog__itmes-right-content {
@@ -171,6 +226,13 @@
   @media (max-width: $tablet-breakpoint) {
     margin-top: 0;
     margin-left: auto;
+    background-color: transparent;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0 auto;
+    margin-top: 211px;
+    background-color: transparent;
   }
 }
 
@@ -187,6 +249,11 @@
     margin-left: auto;
     margin-right: 20px;
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0 auto;
+    margin-top: 302px;
+  }
 }
 
 .blog__itmes-left-second .blog__itmes-content {
@@ -200,6 +267,11 @@
 
   @media (max-width: $tablet-breakpoint) {
     margin-left: 20px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0 auto;
+    margin-top: 302px;
   }
 }
 
@@ -220,6 +292,10 @@
 
   @media (max-width: $tablet-breakpoint) {
     padding-top: 84px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 107px;
   }
 }
 

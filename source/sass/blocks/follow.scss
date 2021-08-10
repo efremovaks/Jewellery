@@ -1,0 +1,126 @@
+.follow {
+  margin-bottom: 50px;
+}
+
+.follow__wrapper {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.follow__header {
+  margin-bottom: 50px;
+}
+
+.follow__header h2 {
+  margin-bottom: 30px;
+}
+
+.follow__header a {
+  display: block;
+  font-family: $main-text-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: $main-text-color;
+  text-decoration: underline;
+  text-decoration-color: #a87b62;
+  text-underline-position: under;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.follow__content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+.follow__content-one {
+  width: 230px;
+  height: 230px;
+
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  background-color: tomato;
+}
+
+.follow__content-two {
+  width: 230px;
+  height: 150px;
+
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  background-color: cornflowerblue;
+}
+
+.follow__content-three {
+  width: 399px;
+  height: 412px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: -1;
+
+  background-color: black;
+}
+
+.follow__content-four {
+  width: 230px;
+  height: 230px;
+
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  background-color: tomato;
+}
+
+.follow__content-five {
+  width: 230px;
+  height: 150px;
+
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  background-color: cornflowerblue;
+}
+
+.follow__content-six {
+  width: 230px;
+  height: 230px;
+
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  background-color: tomato;
+}
+
+.follow__content-seven {
+  width: 230px;
+  height: 150px;
+
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  background-color: cornflowerblue;
+}
