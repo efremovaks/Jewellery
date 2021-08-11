@@ -3,8 +3,7 @@
 
 // АККОРДЕОН
 
-var accordion = document.getElementById('accordion');
-var accordionItems = accordion.querySelectorAll('.accordion__item');
+var accordionItems = document.querySelectorAll('.accordion__item');
 
 
 accordionItems.forEach(function (item) {
