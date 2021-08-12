@@ -93,8 +93,10 @@
     <section class="catalog">
       <h2 class="visually-hidden">Catalog</h2>
       <div class="catalog__wrapper">
-        <div class="catalog__filter accordion">
+        <div class="catalog__filter catalog__filter-closed catalog__filter--nojs accordion">
+          <h3 class="catalog__filter-header">Filter</h3>
           <form action="https://echo.htmlacademy.ru" method="POST">
+            <button class="catalog__filter-close" name="filter-close" type="button"></button>
             <fieldset class="accordion__item accordion__item-show accordion__no-js">
               <p class="accordion__item-header">Product</p>
               <ul class="accordion__item-content">
@@ -151,8 +153,10 @@
                   <div class="catalog__filter-cost-range-controls-scale">
                     <div class="catalog__filter-cost-range-controls-bar"></div>
                   </div>
-                  <div class="catalog__filter-cost-range-controls-switch catalog__filter-cost-range-controls-min" tabindex="0"></div>
-                  <div class="catalog__filter-cost-range-controls-switch catalog__filter-cost-range-controls-max" tabindex="0"></div>
+                  <div class="catalog__filter-cost-range-controls-switch catalog__filter-cost-range-controls-min"
+                    tabindex="0"></div>
+                  <div class="catalog__filter-cost-range-controls-switch catalog__filter-cost-range-controls-max"
+                    tabindex="0"></div>
                 </div>
                 <div class="catalog__filter-cost-range-cost">
                   <label class="catalog__filter-cost-range-cost-min-cost">
@@ -175,144 +179,168 @@
           <div class="catalog__collection-wrapper">
 
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/double-pearl-earrings.webp 1x, img/double-pearl-earrings@2x.webp 2x">
-                <img src="img/double-pearl-earrings.jpg" srcset="img/double-pearl-earrings@2x.jpg"
-                  alt="Double pearl earrings" width="270" height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Double pearl earrings</p>
-                <p class="catalog__collection-item-specification-price">$ 115</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/double-pearl-earrings.webp 1x, img/double-pearl-earrings@2x.webp 2x">
+                  <img src="img/double-pearl-earrings.jpg" srcset="img/double-pearl-earrings@2x.jpg"
+                    alt="Double pearl earrings" width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Double pearl earrings</p>
+                  <p class="catalog__collection-item-specification-price">$ 115</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/black-choker-gold-bead.webp 1x, img/black-choker-gold-bead@2x.webp 2x">
-                <img src="img/black-choker-gold-bead.jpg" srcset="img/black-choker-gold-bead@2x.jpg"
-                  alt="Choker with gold bead" width="270" height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Choker with gold bead</p>
-                <p class="catalog__collection-item-specification-price">$ 55</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/black-choker-gold-bead.webp 1x, img/black-choker-gold-bead@2x.webp 2x">
+                  <img src="img/black-choker-gold-bead.jpg" srcset="img/black-choker-gold-bead@2x.jpg"
+                    alt="Choker with gold bead" width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Choker with gold bead</p>
+                  <p class="catalog__collection-item-specification-price">$ 55</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
-                <img src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg"
-                  alt="Gold layered necklace" width="270" height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Gold layered necklace</p>
-                <p class="catalog__collection-item-specification-price">$ 155</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
+                  <img src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg"
+                    alt="Gold layered necklace" width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Gold layered necklace</p>
+                  <p class="catalog__collection-item-specification-price">$ 155</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x">
-                <img src="img/blue-gemstone-pendant.jpg" srcset="img/blue-gemstone-pendant@2x.jpg"
-                  alt="Blue gemstone pendant" width="270" height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Blue gemstone pendant</p>
-                <p class="catalog__collection-item-specification-price">$ 105</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x">
+                  <img src="img/blue-gemstone-pendant.jpg" srcset="img/blue-gemstone-pendant@2x.jpg"
+                    alt="Blue gemstone pendant" width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Blue gemstone pendant</p>
+                  <p class="catalog__collection-item-specification-price">$ 105</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp" srcset="img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x">
-                <img src="img/boho-earrings.jpg" srcset="img/boho-earrings@2x.jpg" alt="Boho earrings" width="270"
-                  height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Boho earrings</p>
-                <p class="catalog__collection-item-specification-price">$ 75</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp" srcset="img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x">
+                  <img src="img/boho-earrings.jpg" srcset="img/boho-earrings@2x.jpg" alt="Boho earrings" width="270"
+                    height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Boho earrings</p>
+                  <p class="catalog__collection-item-specification-price">$ 75</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
-                <img src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg" alt="Gold bird necklace" width="270"
-                  height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Gold bird necklace</p>
-                <p class="catalog__collection-item-specification-price">$ 135</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
+                  <img src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg" alt="Gold bird necklace"
+                    width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Gold bird necklace</p>
+                  <p class="catalog__collection-item-specification-price">$ 135</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/black-leather-choker-necklace.webp 1x, img/black-leather-choker-necklace@2x.webp 2x">
-                <img src="img/black-leather-choker-necklace.jpg" srcset="img/black-leather-choker-necklace@2x.jpg"
-                  alt="Black leather choker" width="270" height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Black leather choker</p>
-                <p class="catalog__collection-item-specification-price">$ 85</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/black-leather-choker-necklace.webp 1x, img/black-leather-choker-necklace@2x.webp 2x">
+                  <img src="img/black-leather-choker-necklace.jpg" srcset="img/black-leather-choker-necklace@2x.jpg"
+                    alt="Black leather choker" width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Black leather choker</p>
+                  <p class="catalog__collection-item-specification-price">$ 85</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/purple-gemstone-necklace.webp 1x, img/purple-gemstone-necklace@2x.webp 2x">
-                <img src="img/purple-gemstone-necklace.jpg" srcset="img/purple-gemstone-necklace@2x.jpg"
-                  alt="Necklace with amethyst" width="270" height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Necklace with amethyst</p>
-                <p class="catalog__collection-item-specification-price">$ 145</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/purple-gemstone-necklace.webp 1x, img/purple-gemstone-necklace@2x.webp 2x">
+                  <img src="img/purple-gemstone-necklace.jpg" srcset="img/purple-gemstone-necklace@2x.jpg"
+                    alt="Necklace with amethyst" width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Necklace with amethyst</p>
+                  <p class="catalog__collection-item-specification-price">$ 145</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp" srcset="img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x">
-                <img src="img/elephant-earrings.jpg" srcset="img/elephant-earrings@2x.jpg" alt="Elephant earrings"
-                  width="270" height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Elephant earrings</p>
-                <p class="catalog__collection-item-specification-price">$ 95</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp" srcset="img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x">
+                  <img src="img/elephant-earrings.jpg" srcset="img/elephant-earrings@2x.jpg" alt="Elephant earrings"
+                    width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Elephant earrings</p>
+                  <p class="catalog__collection-item-specification-price">$ 95</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/threader-necklace-closeup.webp 1x, img/threader-necklace-closeup@2x.webp 2x">
-                <img src="img/threader-necklace-closeup.jpg" srcset="img/threader-necklace-closeup@2x.jpg"
-                  alt="Threader necklace" width="270" height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Threader necklace</p>
-                <p class="catalog__collection-item-specification-price">$ 115</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/threader-necklace-closeup.webp 1x, img/threader-necklace-closeup@2x.webp 2x">
+                  <img src="img/threader-necklace-closeup.jpg" srcset="img/threader-necklace-closeup@2x.jpg"
+                    alt="Threader necklace" width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Threader necklace</p>
+                  <p class="catalog__collection-item-specification-price">$ 115</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x">
-                <img src="img/origami-crane-necklace.jpg" srcset="img/origami-crane-necklace@2x.jpg"
-                  alt="Origami crane necklace" width="270" height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Origami crane necklace</p>
-                <p class="catalog__collection-item-specification-price">$ 105</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x">
+                  <img src="img/origami-crane-necklace.jpg" srcset="img/origami-crane-necklace@2x.jpg"
+                    alt="Origami crane necklace" width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Origami crane necklace</p>
+                  <p class="catalog__collection-item-specification-price">$ 105</p>
+                </div>
+              </a>
             </div>
             <div class="catalog__collection-item">
-              <picture>
-                <source type="image/webp" srcset="img/marble-earrings.webp 1x, img/marble-earrings@2x.webp 2x">
-                <img src="img/marble-earrings.jpg" srcset="img/marble-earrings@2x.jpg" alt="Marble earrings" width="270"
-                  height="272">
-              </picture>
-              <div class="catalog__collection-item-specification">
-                <p class="catalog__collection-item-specification-name">Marble earrings</p>
-                <p class="catalog__collection-item-specification-price">$ 95</p>
-              </div>
+              <a href="product.html">
+                <picture>
+                  <source type="image/webp" srcset="img/marble-earrings.webp 1x, img/marble-earrings@2x.webp 2x">
+                  <img src="img/marble-earrings.jpg" srcset="img/marble-earrings@2x.jpg" alt="Marble earrings"
+                    width="270" height="272">
+                </picture>
+                <div class="catalog__collection-item-specification">
+                  <p class="catalog__collection-item-specification-name">Marble earrings</p>
+                  <p class="catalog__collection-item-specification-price">$ 95</p>
+                </div>
+              </a>
             </div>
           </div>
 

@@ -1,5 +1,10 @@
 .catalog {
+  position: relative;
   margin-bottom: 75px;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 65px;
+  }
 }
 
 .catalog__wrapper {
@@ -12,16 +17,48 @@
   padding: 0 10px;
 
   @media (max-width: $tablet-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 100%;
     padding: 0 45px;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    padding: 0 49px;
+    padding: 0 13px;
   }
 }
 
 //filter
+
+.catalog__filter {
+  @media (max-width: $tablet-breakpoint) {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+  }
+}
+
+.catalog__filter-header {
+  display: none;
+
+  font-family: $main-text-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #a87b62;
+  }
+}
 
 .catalog form {
   box-sizing: border-box;
@@ -30,6 +67,11 @@
 .catalog__filter fieldset {
   border: 1px solid #a87b62;
   padding: 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    border: none;
+    border-bottom: 1px solid #a87b62;
+  }
 }
 
 .catalog__filter p {
@@ -79,6 +121,7 @@
   line-height: 130%;
   color: $main-text-color;
   padding-left: 30px;
+  cursor: pointer;
 }
 
 .catalog__filter input + label::before {
@@ -104,6 +147,11 @@
 
 .catalog__btn-wrapper {
   margin-top: 34px;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .catalog__btn-apply,
@@ -181,7 +229,11 @@
 }
 
 .catalog__filter-cost-range-controls-max {
-  left: 172px;
+  right: 23%;
+
+  @media (max-width: $tablet-breakpoint) {
+    right: 40%;
+  }
 }
 
 .catalog__filter-cost-range-cost {
@@ -219,8 +271,17 @@
 // catalog__collection
 
 .catalog__collection {
-  position: relative;
   padding-left: 53px;
+  position: relative;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-top: 40px;
+  }
 }
 
 .catalog__collection-wrapper {
@@ -229,10 +290,24 @@
   row-gap: 36px;
   column-gap: 30px;
   margin-bottom: 73px;
+
+  @media (max-width: $mobile-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 27px;
+    margin-bottom: 43px;
+  }
+}
+
+.catalog__collection-item a {
+  display: block;
 }
 
 .catalog__collection-item-specification {
   padding-top: 23px;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 20px;
+  }
 }
 
 .catalog__collection-item-specification-name {
@@ -263,6 +338,10 @@
 .catalog__collection-pagination {
   width: 95px;
   margin: 0 auto;
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 137px;
+  }
 }
 
 .catalog__collection-pagination ul {
@@ -287,6 +366,10 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-right: 23px;
+  }
 }
 
 .catalog__collection-left,
@@ -297,16 +380,99 @@
   font-size: 16px;
   line-height: 130%;
   color: $main-text-color;
-
+  cursor: pointer;
   position: absolute;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
 }
 
 .catalog__collection-left {
   bottom: 0;
   left: 50px;
+
+  @media (max-width: $tablet-breakpoint) {
+    left: 0;
+  }
 }
 
 .catalog__collection-right {
   bottom: 0;
   right: 0;
+}
+
+.catalog__filter-closed form {
+  @media (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+
+.catalog__filter-open form {
+  @media (max-width: $tablet-breakpoint) {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+.catalog__filter--nojs form {
+  @media (max-width: $tablet-breakpoint) {
+    position: static;
+    display: block;
+  }
+}
+
+.catalog__filter-close {
+  display: none;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: #1d1613;
+    top: 75px;
+    right: 0;
+    border: 0;
+    border-radius: 50%;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+
+.catalog__filter-close::after,
+.catalog__filter-close::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 6px;
+  width: 18px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.catalog__filter-close::after {
+  transform: rotate(-45deg);
+}
+
+.catalog__filter-close::before {
+  transform: rotate(45deg);
+}
+
+.catalog__filter--nojs .catalog__filter-close {
+  display: none;
 }

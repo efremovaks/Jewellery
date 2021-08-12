@@ -23,7 +23,7 @@
   }
 }
 
-.shop h2 {
+.shop__slider-header h2 {
   text-align: center;
   padding-bottom: 26px;
 
@@ -32,7 +32,7 @@
   }
 }
 
-.shop a {
+.shop__slider-header a {
   display: block;
   font-family: $main-text-font;
   font-style: normal;
@@ -55,6 +55,10 @@
   @media (max-width: $mobile-breakpoint) {
     width: 130px;
   }
+}
+
+.shop__slider-item a {
+  display: block;
 }
 
 .shop__slider img {
