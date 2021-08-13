@@ -12,20 +12,9 @@ accordionItems.forEach(function (item) {
   }
 });
 
-
-var closeOtherItems = function (currentIndex) {
-  accordionItems.forEach(function (item, index) {
-    if (index === currentIndex) {
-      return;
-    }
-    item.classList.remove('accordion__item-show');
-  });
-};
-
-accordionItems.forEach(function (item, index) {
+accordionItems.forEach(function (item) {
   item.addEventListener('click', function () {
     if (item) {
-      closeOtherItems(index);
       item.classList.toggle('accordion__item-show');
     }
   });

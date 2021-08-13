@@ -7,7 +7,9 @@
   <meta name="description" content="Ювелирные изделия">
   <title>Jewellery</title>
   <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/CormorantGaramond-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="js/script.js" as="script">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
@@ -109,6 +111,11 @@
               <img src="img/product-necklace-detail.jpg" srcset="img/product-necklace-detail@2x.jpg" alt="womens necklace set" width="470" height="435">
             </picture>
           </div>
+
+          <div class="product-card__pagination">
+            <p>1 of 4</p>
+          </div>
+
         </div>
 
         <div class="product-card__description">
@@ -403,6 +410,30 @@
       </div>
     </section>
   </footer>
+
+  <section class="modal-login">
+    <div class="modal-login__wrapper">
+      <div class="modal-login__box">
+        <h2>Log In</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <label for="modal-login-mail">
+            <input id="modal-login-mail" type="email" name="Email" placeholder="Your E-mail" title="Your E-mail" required="">
+          </label>
+          <label for="modal-login-pass">
+            <input id="modal-login-pass" type="password" name="Password" placeholder="Password" title="Password" required="">
+          </label>
+          <a href="#">Forgot your password?</a>
+          <button class="modal-login__button" type="submit">Log In</button>
+        </form>
+        <div class="modal-login__sign-up">
+          <p>Don’t have an account?</p>
+          <a href="#">Sign up</a>
+        </div>
+        <button class="modal-login__close" type="button" name="close"></button>
+      </div>
+    </div>
+  </section>
+
   <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>
 </body>
