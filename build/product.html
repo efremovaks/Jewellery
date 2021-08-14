@@ -67,7 +67,7 @@
               </li>
             </ul>
 
-            <a class="main-nav__login" href="#">Login</a>
+            <a class="main-nav__login" href="modal-login.html">Login</a>
           </div>
         </div>
         <a class="main-nav__cart" href="#">
@@ -149,7 +149,7 @@
               </tr>
             </table>
           </div>
-          <button type="button">Add to cart</button>
+          <button class="product-card__description-about-btn" type="button">Add to cart</button>
           <div class="product-card__description-conditions">
             <p>14 Day Returns</p>
             <p>2-Year Warranty</p>
@@ -430,6 +430,42 @@
           <a href="#">Sign up</a>
         </div>
         <button class="modal-login__close" type="button" name="close"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-product">
+    <div class="modal-product__wrapper">
+      <div class="modal-product__box">
+        <h2>The item was added to your cart</h2>
+        <button class="modal-product__close" type="button" name="close"></button>
+        <div class="modal-product__items">
+          <picture>
+            <source type="image/webp" srcset="img/product-necklace-detail@2x.webp 1x, img/product-necklace-detail@2x.webp 2x">
+            <img src="img/product-necklace-detail.jpg" srcset="img/product-necklace-detail@2x.jpg" alt="womens necklace set" width="84" height="79">
+          </picture>
+          <div class="modal-product__items-about">
+            <p class="modal-product__items-about-name">Gold Necklace</p>
+            <p class="modal-product__items-about-price">$ 115</p>
+          </div>
+
+          <div class="modal-product__items-amt">
+            <button class="modal-product__items-amt-add" type="button">+</button>
+            <p class="modal-product__items-amt-total">1</p>
+            <button class="modal-product__items-amt-subtract">-</button>
+
+          </div>
+
+        </div>
+        <div class="modal-product__cart-contain">
+          <p>You have 1 item in the cart</p>
+          <p>Cart subtotal: $ 115</p>
+        </div>
+
+        <div class="modal-product__btn">
+          <a class="modal-product__btn-continue" href="catalog.html">Continue shoppin</a>
+          <a class="modal-product__btn-checkout" href="cart.html">Checkout</a>
+        </div>
       </div>
     </div>
   </section>

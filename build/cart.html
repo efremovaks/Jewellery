@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ювелирные изделия">
   <title>Jewellery</title>
-  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/CormorantGaramond-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/CormorantGaramond-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin="">
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
@@ -25,16 +25,15 @@
 
           <a class="main-nav__logo" href="index.html">
             <svg width="66" height="66">
-              <use xlink:href="img/sprite.svg#logo" />
+              <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
           </a>
 
           <p class="main-nav__search">
             <svg width="14" height="14">
-              <use xlink:href="img/sprite.svg#search" />
+              <use xlink:href="img/sprite.svg#search"></use>
             </svg>
-            <input id="search" type="search" name="search" placeholder="Type here to search"
-              title="Кто ищет, тот найдёт">
+            <input id="search" type="search" name="search" placeholder="Type here to search" title="Кто ищет, тот найдёт">
             <label for="search"></label>
           </p>
           <div class="main-nav__list">
@@ -67,40 +66,24 @@
                 <a href="#">Contact Us</a>
               </li>
             </ul>
+
+            <a class="main-nav__login" href="modal-login.html">Login</a>
           </div>
         </div>
+        <a class="main-nav__cart" href="#">
+          <svg width="20" height="18">
+            <use xlink:href="img/sprite.svg#cart"></use>
+          </svg>
+          <span>Cart 0</span>
+        </a>
       </nav>
+
     </div>
 
   </header>
-  <main>
-    <h1 class="visually-hidden">Log In</h1>
-
-    <section class="modal-login modal-login--nojs">
-      <div class="modal-login__wrapper">
-        <div class="modal-login__box">
-          <h2>Log In</h2>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <label for="modal-login-mail">
-              <input id="modal-login-mail" type="email" name="Email" placeholder="Your E-mail" title="Your E-mail"
-                required>
-            </label>
-            <label for="modal-login-pass">
-              <input id="modal-login-pass" type="password" name="Password" placeholder="Password" title="Password"
-                required>
-            </label>
-            <a href="#">Forgot your password?</a>
-            <button class="modal-login__button" type="submit">Log In</button>
-          </form>
-          <div class="modal-login__sign-up">
-            <p>Don’t have an account?</p>
-            <a href="#">Sign up</a>
-          </div>
-          <button class="modal-login__close" type="button" name="close"></button>
-        </div>
-      </div>
-    </section>
-  </main>
+<main>
+  <h1>КОРЗИНА</h1>
+</main>
   <footer class="page-footer">
     <section class="footer">
       <div class="footer__wrapper">
@@ -182,6 +165,32 @@
       </div>
     </section>
   </footer>
+
+  <section class="modal-login">
+    <div class="modal-login__wrapper">
+      <div class="modal-login__box">
+        <h2>Log In</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <label for="modal-login-mail">
+            <input id="modal-login-mail" type="email" name="Email" placeholder="Your E-mail" title="Your E-mail" required="">
+          </label>
+          <label for="modal-login-pass">
+            <input id="modal-login-pass" type="password" name="Password" placeholder="Password" title="Password" required="">
+          </label>
+          <a href="#">Forgot your password?</a>
+          <button class="modal-login__button" type="submit">Log In</button>
+        </form>
+        <div class="modal-login__sign-up">
+          <p>Don’t have an account?</p>
+          <a href="#">Sign up</a>
+        </div>
+        <button class="modal-login__close" type="button" name="close"></button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

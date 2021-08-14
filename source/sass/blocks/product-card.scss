@@ -33,7 +33,7 @@
 
   @media (max-width: $mobile-breakpoint) {
     grid-template-columns: 100%;
-    padding: 0 14px;
+    padding: 0 5px;
   }
 }
 
@@ -265,7 +265,7 @@
   text-align: right;
 }
 
-.product-card__description button {
+.product-card__description-about-btn {
   font-family: $main-text-font;
   font-style: normal;
   font-weight: 500;
@@ -275,12 +275,13 @@
   color: #ffffff;
   width: 370px;
   min-height: 68px;
+  cursor: pointer;
 
   background: #a87b62;
   border: 1px solid #a87b62;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 
   &:active {
