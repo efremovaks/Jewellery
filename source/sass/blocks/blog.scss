@@ -279,7 +279,7 @@
   }
 }
 
-.blog__items-date {
+.blog__items-date p {
   margin: 0;
   font-family: $main-text-font;
   font-style: normal;
@@ -303,7 +303,7 @@
   }
 }
 
-.blog__items-about {
+.blog__items-about p {
   margin: 0;
   font-family: $main-header-font;
   font-style: normal;
@@ -315,7 +315,7 @@
   padding-bottom: 42px;
 }
 
-.blog__items-link {
+.blog__items-link a {
   display: block;
   font-family: $main-text-font;
   font-style: normal;

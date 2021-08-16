@@ -48,7 +48,8 @@
   }
 }
 
-.modal-login__box h2 {
+.modal-login__box h2,
+.modal-login--nojs h1 {
   font-family: $main-header-font;
   font-style: normal;
   font-weight: bold;

@@ -5,20 +5,21 @@
 
 var accordionItems = document.querySelectorAll('.accordion__item');
 
-
-accordionItems.forEach(function (item) {
-  if (item.classList.contains('accordion__no-js')) {
-    item.classList.remove('accordion__no-js');
-  }
-});
-
-accordionItems.forEach(function (item) {
-  item.addEventListener('click', function () {
-    if (item) {
-      item.classList.toggle('accordion__item-show');
+if (accordionItems) {
+  accordionItems.forEach(function (item) {
+    if (item.classList.contains('accordion__no-js')) {
+      item.classList.remove('accordion__no-js');
     }
   });
-});
+
+  accordionItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      if (item) {
+        item.classList.toggle('accordion__item-show');
+      }
+    });
+  });
+}
 
 'use strict';
 
@@ -74,7 +75,6 @@ if (filter) {
 
 // menu
 
-// var body = document.querySelector('.page-body');
 var navMain = document.querySelector('.main-nav');
 var navButton = document.querySelector('.main-nav__menu-button');
 var navItem = document.querySelectorAll('.main-nav__list');
@@ -83,18 +83,18 @@ if (navMain.classList.contains('main-nav--nojs')) {
   navMain.classList.remove('main-nav--nojs');
 }
 
-navButton.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--open');
-    // body.style.overflow = 'hidden';
+if (navButton) {
+  navButton.addEventListener('click', function () {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--open');
 
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--open');
-    // body.style.overflow = 'auto';
-  }
-});
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--open');
+    }
+  });
+}
 
 window.addEventListener('keydown', function (evt) {
   if (evt.key === 'Escape' || evt.key === 'Esc') {
@@ -102,7 +102,6 @@ window.addEventListener('keydown', function (evt) {
       evt.preventDefault();
       navMain.classList.remove('main-nav--open');
       navMain.classList.add('main-nav--closed');
-      // body.style.overflow = 'auto';
     }
   }
 });
@@ -114,7 +113,6 @@ for (var i = 0; i < navItem.length; i++) {
     if (navMain.classList.contains('main-nav--open')) {
       navMain.classList.remove('main-nav--open');
       navMain.classList.add('main-nav--closed');
-      // body.style.overflow = 'auto';
     }
   });
 }

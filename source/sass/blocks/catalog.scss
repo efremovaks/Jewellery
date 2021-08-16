@@ -87,6 +87,11 @@
   padding-top: 24px;
   padding-left: 23px;
   padding-bottom: 22px;
+}
+
+.catalog__filter-item-header {
+  min-height: 50px;
+  width: 100%;
 
   &::before {
     top: 29px;
@@ -310,7 +315,7 @@
   }
 }
 
-.catalog__collection-item-specification-name {
+.catalog__collection-item-specification-name p {
   font-family: $main-text-font;
   font-style: normal;
   font-weight: 500;
@@ -323,7 +328,7 @@
   padding-bottom: 6px;
 }
 
-.catalog__collection-item-specification-price {
+.catalog__collection-item-specification-price p {
   font-family: $main-text-font;
   font-style: normal;
   font-weight: bold;
