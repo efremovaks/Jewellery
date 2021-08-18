@@ -26,7 +26,7 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    padding: 0;
+    padding: 0 10px;
   }
 }
 
@@ -304,7 +304,8 @@
 }
 
 .blog__items-about p {
-  margin: 0;
+  width: 240px;
+  margin: 0 auto;
   font-family: $main-header-font;
   font-style: normal;
   font-weight: 600;

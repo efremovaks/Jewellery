@@ -116,6 +116,14 @@
 .catalog__filter li {
   position: relative;
   margin-bottom: 11px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .catalog__filter label {
@@ -127,6 +135,10 @@
   color: $main-text-color;
   padding-left: 30px;
   cursor: pointer;
+}
+
+.catalog__filter input:focus + label {
+  outline: auto;
 }
 
 .catalog__filter input + label::before {
@@ -254,6 +266,7 @@
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+  appearance: textfield;
 
   &::placeholder {
     font-family: $main-text-font;
@@ -262,6 +275,12 @@
     font-size: 14px;
     line-height: 130%;
     color: $main-text-color;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    appearance: number-input;
   }
 }
 

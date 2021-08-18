@@ -1,8 +1,4 @@
 .main-nav {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
 }
 
@@ -52,7 +48,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #9b9997;
+  color: $main-text-color;
   cursor: pointer;
 
   &:focus {
@@ -149,7 +145,7 @@
 }
 
 .main-nav__list li {
-  padding-right: 20px;
+  padding-right: 35px;
 
   &:last-child {
     padding-right: 0;
@@ -159,16 +155,17 @@
 .main-nav__list-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 500px;
+  width: 525px;
   max-width: 100%;
-  padding-left: 10px;
   padding-top: 69px;
+  padding-left: 22px;
+  padding-bottom: 20px;
   margin: 0 auto;
 
   @media (max-width: $tablet-breakpoint) {
     width: 100%;
     display: block;
+    padding-bottom: 0;
   }
 }
 
@@ -427,14 +424,19 @@
 }
 
 .main-nav--open {
+  position: absolute;
   z-index: 2;
+  min-height: 100vh;
+  overflow: auto;
 }
 
 .main-nav--closed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(0);
+  @media (max-width: $tablet-breakpoint) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+  }
 }
 
 .main-nav--closed .main-nav__menu-button::before {

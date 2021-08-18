@@ -11,6 +11,11 @@
   }
 }
 
+.shop__wrapper {
+  width: 100%;
+  padding: 0 10px;
+}
+
 .shop__slider-header {
   padding-bottom: 60px;
 
@@ -73,7 +78,7 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    width: 130px;
+    width: 100%;
   }
 }
 
@@ -205,7 +210,7 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    padding-top: 37px;
+    padding-top: 0;
   }
 }
 

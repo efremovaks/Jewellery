@@ -17,14 +17,6 @@ var swiper = new Swiper('.slider-swiper', {
         type: 'fraction',
       },
     },
-    550: {
-      slidesPerView: 3,
-      spaceBetween: 15,
-      slidesPerGroup: 3,
-      pagination: {
-        type: 'fraction',
-      },
-    },
     768: {
       slidesPerView: 2,
       spaceBetween: 30,

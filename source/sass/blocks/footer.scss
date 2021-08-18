@@ -96,37 +96,47 @@
 }
 
 .footer__spam-feedback input {
-  border: 0 solid transparent;
+  border: 1px solid transparent;
   border-bottom: 1px solid #ffffff;
+  border-radius: 0;
   outline: none;
   font-family: $main-text-font;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #9b9997;
+  color: $footer-items-color;
   background-color: inherit;
   width: 100%;
   padding-bottom: 8px;
+  padding-right: 42%;
+
+  &:focus {
+    border: 1px solid #ffffff;
+  }
 }
 
-.footer__spam-feedback a {
+.footer__spam-feedback button {
   font-family: $main-text-font;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
+  color: $footer-items-color;
+  cursor: pointer;
 
   position: absolute;
   top: 0;
   right: 42px;
+  border: none;
+  background: transparent;
 
   &:hover {
     color: #9b9997;
   }
 
   &:active {
-    color: #ffffff;
+    color: $footer-items-color;
   }
 
   &::after {

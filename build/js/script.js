@@ -4,6 +4,8 @@
 // АККОРДЕОН
 
 var accordionItems = document.querySelectorAll('.accordion__item');
+var accordionHeader = document.querySelectorAll('.accordion__item-header');
+
 
 if (accordionItems) {
   accordionItems.forEach(function (item) {
@@ -12,10 +14,20 @@ if (accordionItems) {
     }
   });
 
-  accordionItems.forEach(function (item) {
+
+  var accordionItemsToggle = function (currentIndex) {
+    accordionItems.forEach(function (item, index) {
+      if (index === currentIndex) {
+        item.classList.toggle('accordion__item-show');
+        return;
+      }
+    });
+  };
+
+  accordionHeader.forEach(function (item, index) {
     item.addEventListener('click', function () {
       if (item) {
-        item.classList.toggle('accordion__item-show');
+        accordionItemsToggle(index);
       }
     });
   });
@@ -75,6 +87,7 @@ if (filter) {
 
 // menu
 
+var body = document.querySelector('.page-body');
 var navMain = document.querySelector('.main-nav');
 var navButton = document.querySelector('.main-nav__menu-button');
 var navItem = document.querySelectorAll('.main-nav__list');
@@ -88,10 +101,12 @@ if (navButton) {
     if (navMain.classList.contains('main-nav--closed')) {
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--open');
+      body.style.overflow = 'hidden';
 
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--open');
+      body.style.overflow = 'auto';
     }
   });
 }
@@ -102,6 +117,7 @@ window.addEventListener('keydown', function (evt) {
       evt.preventDefault();
       navMain.classList.remove('main-nav--open');
       navMain.classList.add('main-nav--closed');
+      body.style.overflow = 'auto';
     }
   }
 });
@@ -113,6 +129,7 @@ for (var i = 0; i < navItem.length; i++) {
     if (navMain.classList.contains('main-nav--open')) {
       navMain.classList.remove('main-nav--open');
       navMain.classList.add('main-nav--closed');
+      body.style.overflow = 'auto';
     }
   });
 }
@@ -274,14 +291,6 @@ var swiper = new Swiper('.slider-swiper', {
       slidesPerView: 2,
       spaceBetween: 15,
       slidesPerGroup: 2,
-      pagination: {
-        type: 'fraction',
-      },
-    },
-    550: {
-      slidesPerView: 3,
-      spaceBetween: 15,
-      slidesPerGroup: 3,
       pagination: {
         type: 'fraction',
       },

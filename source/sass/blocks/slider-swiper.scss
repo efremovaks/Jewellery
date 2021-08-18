@@ -21,12 +21,13 @@
     max-width: 678px;
   }
 
-  @media (max-width: $mobile-breakpoint) {
-    max-width: 290px;
+  @media (min-width: 500px) and (max-width: 750px) {
+    max-width: 440px;
   }
 
-  @media (min-width: 550px) and (max-width: $mobile-breakpoint) {
-    max-width: 520px;
+  @media (max-width: 499px) {
+    max-width: 290px;
+    box-sizing: border-box;
   }
 }
 

@@ -66,6 +66,7 @@
   height: 100%;
 
   @media (max-width: $mobile-breakpoint) {
+    width: fit-content;
     height: 258px;
   }
 }
@@ -133,6 +134,7 @@
 
   @media (max-width: $mobile-breakpoint) {
     width: 100%;
+    padding: 0 9px;
   }
 }
 
@@ -166,6 +168,7 @@
   @media (max-width: $mobile-breakpoint) {
     margin-left: 0;
     margin-top: 41px;
+    padding: 0 9px;
   }
 }
 

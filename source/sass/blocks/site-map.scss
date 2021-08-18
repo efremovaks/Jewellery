@@ -1,0 +1,9 @@
+.site-map {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-map a {
+  display: block;
+  padding-bottom: 20px;
+}
