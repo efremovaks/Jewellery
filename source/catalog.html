@@ -99,7 +99,7 @@
           <h3 class="catalog__filter-header">Filter</h3>
           <form action="https://echo.htmlacademy.ru" method="POST">
             <button class="catalog__filter-close" name="filter-close" type="button"></button>
-            <fieldset class="accordion__item accordion__item-show accordion__no-js">
+            <fieldset class="accordion__item accordion__item-show accordion__no-js" tabindex="0">
               <div class="accordion__item-header catalog__filter-item-header">
                 <p>Product</p>
               </div>
@@ -123,7 +123,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="accordion__item accordion__no-js">
+            <fieldset class="accordion__item accordion__no-js" tabindex="0">
               <div class="accordion__item-header catalog__filter-item-header">
                 <p>Material</p>
               </div>
@@ -138,7 +138,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="accordion__item accordion__no-js">
+            <fieldset class="accordion__item accordion__no-js" tabindex="0">
               <div class="accordion__item-header catalog__filter-item-header">
                 <p>Collection</p>
               </div>
@@ -154,7 +154,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog__filter-cost accordion__item accordion__item-show accordion__no-js">
+            <fieldset class="catalog__filter-cost accordion__item accordion__item-show accordion__no-js" tabindex="0">
               <div class="accordion__item-header catalog__filter-item-header">
                 <p>Price</p>
               </div>
@@ -428,9 +428,9 @@
             <p>News and updates from CH. No spam, we promise.</p>
           </div>
           <div class="footer__spam-feedback">
-            <input id="footer__feedback" type="email" name="feedback-mail" placeholder="Your E-mail">
+            <input id="footer__feedback" type="email" name="feedback-mail" placeholder="Your E-mail" required>
             <label for="footer__feedback"></label>
-            <a href="#">Sign Up</a>
+            <button type="submit">Sign Up</button>
           </div>
         </div>
         <div class="footer__items-wrapper">

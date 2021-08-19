@@ -67,6 +67,11 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 290px;
+    margin: 0 auto;
+  }
 }
 
 .blog__itmes-left {
@@ -88,6 +93,7 @@
   width: 570px;
   min-height: 630px;
   background-color: #f0eae4;
+  margin-bottom: 30px;
 
   background-image: url("../img/alve-blog-trends-desktop.jpg");
   background-repeat: no-repeat;
@@ -132,6 +138,7 @@
   width: 570px;
   min-height: 300px;
   background-color: #f0eae4;
+  margin-bottom: 30px;
 
   @media (min-width: $min-desktop-breakpoint) and (max-width: $desktop-breakpoint) {
     width: 485px;
@@ -330,4 +337,5 @@
   text-underline-position: under;
   width: fit-content;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
