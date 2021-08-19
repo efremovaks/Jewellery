@@ -44,7 +44,12 @@ for (var i = 0; i < navItem.length; i++) {
     if (navMain.classList.contains('main-nav--open')) {
       navMain.classList.remove('main-nav--open');
       navMain.classList.add('main-nav--closed');
-      body.style.overflow = 'auto';
+      if (navItem[i].classList.contains('popap-forever')) {
+        body.style.overflow = 'hidden';
+      } else {
+        body.style.overflow = 'auto';
+      }
+
     }
   });
 }
