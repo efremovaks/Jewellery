@@ -30,11 +30,13 @@ if (accordionItems) {
         accordionItemsToggle(index);
       }
     });
+  });
 
+  accordionItems.forEach(function (item) {
     item.addEventListener('keydown', function (evt) {
-      if (item) {
-        if (evt.key === 'Enter' || evt.key === ' ') {
-          accordionItemsToggle(index);
+      if (evt.key === 'Enter' || evt.key === ' ' || evt.key === 'Space') {
+        if (item) {
+          item.classList.toggle('accordion__item-show');
         }
       }
     });

@@ -1,5 +1,5 @@
 .blog {
-  margin-bottom: 120px;
+  margin-bottom: 86px;
 
   @media (max-width: $tablet-breakpoint) {
     margin-bottom: 69px;
@@ -81,11 +81,11 @@
 
   @media (max-width: $tablet-breakpoint) {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 
@@ -112,6 +112,7 @@
     padding: 0 30px;
     min-height: 300px;
     background-image: url("../img/alve-blog-trends-tablet.jpg");
+    margin-bottom: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/alve-blog-trends-tablet@2x.jpg");
@@ -125,6 +126,7 @@
     padding: 0;
     background-image: url("../img/alve-odonnell-mobile.jpg");
     background-position: top;
+    margin-bottom: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/alve-odonnell-mobile@2x.jpg");
