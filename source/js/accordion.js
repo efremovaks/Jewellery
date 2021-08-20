@@ -30,5 +30,13 @@ if (accordionItems) {
         accordionItemsToggle(index);
       }
     });
+
+    item.addEventListener('keydown', function (evt) {
+      if (item) {
+        if (evt.key === 'Enter' || evt.key === ' ') {
+          accordionItemsToggle(index);
+        }
+      }
+    });
   });
 }

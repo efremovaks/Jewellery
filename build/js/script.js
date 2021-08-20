@@ -30,6 +30,14 @@ if (accordionItems) {
         accordionItemsToggle(index);
       }
     });
+
+    item.addEventListener('keydown', function (evt) {
+      if (item) {
+        if (evt.key === 'Enter' || evt.key === ' ') {
+          accordionItemsToggle(index);
+        }
+      }
+    });
   });
 }
 
@@ -90,7 +98,7 @@ if (filter) {
 var body = document.querySelector('.page-body');
 var navMain = document.querySelector('.main-nav');
 var navButton = document.querySelector('.main-nav__menu-button');
-var navItem = document.querySelectorAll('.main-nav__list');
+var navItem = document.querySelectorAll('.main-nav__list a');
 
 if (navMain.classList.contains('main-nav--nojs')) {
   navMain.classList.remove('main-nav--nojs');
@@ -122,19 +130,17 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-for (var i = 0; i < navItem.length; i++) {
-
-  navItem[i].addEventListener('click', function () {
+navItem.forEach(function (item) {
+  item.addEventListener('click', function () {
     if (navMain.classList.contains('main-nav--open')) {
       navMain.classList.remove('main-nav--open');
       navMain.classList.add('main-nav--closed');
-
-      if (!navItem[i].classList.contains('popap-forever')) {
+      if (!item.classList.contains('popap-forever')) {
         body.style.overflow = 'auto';
       }
     }
   });
-}
+});
 
 'use strict';
 
