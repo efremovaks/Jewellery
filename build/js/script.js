@@ -34,7 +34,7 @@ if (accordionItems) {
 
   accordionItems.forEach(function (item) {
     item.addEventListener('keydown', function (evt) {
-      if (evt.key === 'Enter' || evt.key === ' ' || evt.key === 'Space') {
+      if (evt.key === 'Enter') {
         if (item) {
           item.classList.toggle('accordion__item-show');
         }
