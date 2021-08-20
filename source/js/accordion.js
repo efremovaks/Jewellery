@@ -36,6 +36,7 @@ if (accordionItems) {
     item.addEventListener('keydown', function (evt) {
       if (evt.key === 'Enter') {
         if (item) {
+          evt.preventDefault();
           item.classList.toggle('accordion__item-show');
         }
       }
